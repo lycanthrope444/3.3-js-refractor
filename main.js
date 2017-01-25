@@ -301,8 +301,20 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+// Since the variable contained a number, it is expecting a number to be added.
+// Since the other variable is undefined, when the two are added, weirdness occurs.
 
+var accelerate = function(amount) {
+  if (isNaN(amount)){
+    speed =1;
+  } else {
+    speed += amount;
+  }
+  return speed;
+};
 
+console.log(accelerate());
+console.log(accelerate("string"));
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
