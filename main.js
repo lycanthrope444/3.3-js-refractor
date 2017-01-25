@@ -203,6 +203,12 @@ var callTenTimes = function(callback) {
   _.each(range, callback);
 };
 
+
+var callTenTimes = function(callback) {
+	for(var i = 0; i < 10; i++){
+		callback();
+	}
+};
 // Put your answer below -------------------------
 var callNTimes = function(callback, times) {
   var range = _.range(times);
@@ -214,7 +220,14 @@ var myFunction = function() {
 };
 
 console.log(callNTimes(myFunction, 5));
+// Alternate question since i didn't understand what was actually happening.
+var callNTimes = function(callback, times) {
+	for(var i = 0; i < times; i++){
+		callback();
+	}
+};
 
+console.log(callNTimes(myFunction, 3));
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -315,6 +328,7 @@ var accelerate = function(amount) {
 
 console.log(accelerate());
 console.log(accelerate("string"));
+console.log(accelerate(7));
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -356,6 +370,19 @@ var callLater = function(timeout, callback) {
 };
 
 // Put your answer below -------------------------
+var testFunction = function(){
+    console.log("Test");
+};
+
+var callLater = function(timeout, callback) {
+  if (isNaN(callback)&& typeof callback!= "function"){
+    setTimeout(timeout, 0);
+  } else {
+    setTimeout(callback, timeout);
+  }
+};
+callLater(testFunction);
+callLater(3000, testFunction);
 
 
 // -----------------------------------------------
