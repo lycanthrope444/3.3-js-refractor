@@ -85,6 +85,12 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+/* Answer: C;
+* 1. Letter is set to X, but the variable is not logged.
+* 2. A timeout function is called, so the program waits to run this function.
+* 3. Letter is set to Z, then letter is logged.
+* 4. The timeout from before is triggered, setting the letter to y and logging it.
+*/
 
 // -----------------------------------------------
 
