@@ -204,7 +204,16 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
+var callNTimes = function(callback, times) {
+  var range = _.range(times);
+  _.each(range, callback);
+};
 
+var myFunction = function() {
+  console.log('i am working');
+};
+
+console.log(callNTimes(myFunction, 5));
 
 // -----------------------------------------------
 
