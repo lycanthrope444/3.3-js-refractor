@@ -181,7 +181,8 @@ console.log(spanishColor('verde'));
 var foo = "bar";
 
 // Put your answer below -------------------------
-
+var foo;
+foo = "bar";
 
 // -----------------------------------------------
 
