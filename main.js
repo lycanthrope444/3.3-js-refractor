@@ -112,7 +112,13 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
+// https://medium.freecodecamp.com/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb#.k5600efbk
+// I didn't realize that you could chain operations together, but the above link mentioned that you could.
 
+var reverseStr = function(str) {
+  return str.split("").reverse().join("");
+
+};
 
 // -----------------------------------------------
 
